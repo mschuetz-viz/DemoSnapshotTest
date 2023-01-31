@@ -51,4 +51,26 @@ Test Suite 'Selected tests' failed at 2023-01-31 15:10:35.972.
 	 Executed 4 tests, with 2 failures (0 unexpected) in 0.110 (0.111) seconds
 ```
 
-
+## Output when running on Github Actions
+```
+Test Suite 'All tests' started at 2023-01-31 15:19:10.147
+Test Suite 'DemoSnapshotTestTests.xctest' started at 2023-01-31 15:19:10.148
+Test Suite 'DemoSnapshotTestTests' started at 2023-01-31 15:19:10.148
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testImageMatchingReference]' started.
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testImageMatchingReference]' passed (0.024 seconds).
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testImageNotMatchingReference]' started.
+2023-01-31 15:19:10.361431+0000 DemoSnapshotTest[6209:20220] [api] No Metal renderer available.
+2023-01-31 15:19:10.866762+0000 DemoSnapshotTest[6209:20220] [api] -[CIContext render:toBitmap:rowBytes:bounds:format:colorSpace:] format Rf on GLES.
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testImageNotMatchingReference]' passed (0.695 seconds).
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testSimplyFailing]' started.
+/Users/runner/work/DemoSnapshotTest/DemoSnapshotTest/DemoSnapshotTestTests/DemoSnapshotTestTests.swift:38: error: -[DemoSnapshotTestTests.DemoSnapshotTestTests testSimplyFailing] : XCTAssertTrue failed
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testSimplyFailing]' failed (0.305 seconds).
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testSimplySucceeding]' started.
+Test Case '-[DemoSnapshotTestTests.DemoSnapshotTestTests testSimplySucceeding]' passed (0.001 seconds).
+Test Suite 'DemoSnapshotTestTests' failed at 2023-01-31 15:19:11.176.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 1.025 (1.028) seconds
+Test Suite 'DemoSnapshotTestTests.xctest' failed at 2023-01-31 15:19:11.177.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 1.025 (1.029) seconds
+Test Suite 'All tests' failed at 2023-01-31 15:19:11.177.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 1.025 (1.030) seconds
+```
