@@ -29,6 +29,14 @@ final class DemoSnapshotTestTests: XCTestCase {
                 precision: Constants.snapshotPrecision, 
                 perceptualPrecision: Constants.snapshotPerceptualPrecision))
     }
+    
+    func testSimplySucceeding() throws {
+        XCTAssertTrue(true)
+    }
+    
+    func testSimplyFailing() throws {
+        XCTAssertTrue(false)
+    }
 }
 
 extension DemoSnapshotTestTests {
